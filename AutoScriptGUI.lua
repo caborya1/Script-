@@ -331,7 +331,8 @@ end)
 
 -- Update status periodically
 spawn(function()
-    while wait(1) do
+    while true do
+        wait(1)
         if AutoScript.State.Running then
             StatusLabel.Text = "Status: Active | Rebirths: " .. AutoScript.State.Rebirths
             StatusLabel.TextColor3 = Color3.fromRGB(0, 255, 0)

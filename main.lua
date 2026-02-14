@@ -207,8 +207,7 @@ function AutoScript:AutoSpeed()
     
     local character = LocalPlayer.Character
     if character and character:FindFirstChild("Humanoid") then
-        local humanoid = character.Humanoid
-        humanoid.WalkSpeed = 16 * self.Config.SpeedMultiplier
+        character.Humanoid.WalkSpeed = 16 * self.Config.SpeedMultiplier
     end
 end
 
