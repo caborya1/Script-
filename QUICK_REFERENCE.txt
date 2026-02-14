@@ -1,0 +1,102 @@
+╔══════════════════════════════════════════════════════════════╗
+║            REDYNHUB AUTOSCRIPT - QUICK REFERENCE             ║
+╚══════════════════════════════════════════════════════════════╝
+
+🎮 WHAT THIS SCRIPT DOES
+───────────────────────────────────────────────────────────────
+Automates gameplay with 6 powerful features:
+✓ Auto Money    ✓ Auto Collect   ✓ Auto Trade
+✓ Auto Upgrade  ✓ Auto Speed     ✓ Auto Rebirth
+
+📋 QUICK START (3 STEPS)
+───────────────────────────────────────────────────────────────
+1. Open main.lua
+2. Copy all content (Ctrl+A, Ctrl+C)
+3. Paste into executor and run
+
+That's it! Everything starts automatically! 🚀
+
+📂 WHICH FILE TO USE?
+───────────────────────────────────────────────────────────────
+╭─────────────────┬────────────────────────────────────────╮
+│ main.lua        │ ⭐ RECOMMENDED - Easy, auto-start     │
+│ loadstring.lua  │ For URL loading                        │
+│ AutoScriptGUI   │ Want manual control with GUI           │
+│ AutoScript.lua  │ Advanced - Customize the code          │
+╰─────────────────┴────────────────────────────────────────╯
+
+⚙️ COMMON CUSTOMIZATIONS
+───────────────────────────────────────────────────────────────
+Want to rebirth at 5 million instead of 1 million?
+  → Change: RebirthThreshold = 5000000
+
+Want faster speed (3x instead of 2x)?
+  → Change: SpeedMultiplier = 3
+
+Don't want auto rebirth?
+  → Change: AutoRebirth = false
+
+🔧 HOW TO CUSTOMIZE
+───────────────────────────────────────────────────────────────
+Find this section in main.lua:
+
+  AutoScript.Config = {
+      AutoMoney = true,           ← ON/OFF
+      AutoCollect = true,         ← ON/OFF
+      AutoTrade = true,           ← ON/OFF
+      AutoUpgrade = true,         ← ON/OFF
+      AutoSpeed = true,           ← ON/OFF
+      AutoRebirth = true,         ← ON/OFF
+      RebirthThreshold = 1000000, ← Change amount
+      SpeedMultiplier = 2,        ← Change speed
+  }
+
+Just edit true/false or change numbers!
+
+📱 COMMON ISSUES & FIXES
+───────────────────────────────────────────────────────────────
+❌ Problem: Getting kicked for speed
+   ✅ Solution: Lower SpeedMultiplier to 1.5
+
+❌ Problem: Not collecting items
+   ✅ Solution: Game uses different folder names (normal)
+
+❌ Problem: Not rebirthing
+   ✅ Solution: Check if you have enough money
+
+❌ Problem: Script not running
+   ✅ Solution: Re-execute the script
+
+💡 PRO TIPS
+───────────────────────────────────────────────────────────────
+• Leave it running while AFK
+• Lower speed if getting kicked
+• Check console for "AutoScript started!" message
+• Rebirths counter shows if auto-rebirth is working
+• You can edit the script while it's running (just re-run)
+
+📚 MORE INFO
+───────────────────────────────────────────────────────────────
+README.md      → Full documentation
+QUICKSTART.md  → Detailed guide
+COMPARISON.md  → Compare different versions
+
+🎯 LOADSTRING COMMAND
+───────────────────────────────────────────────────────────────
+For easy sharing, use this one-liner:
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/
+caborya1/Script-/main/loadstring.lua"))()
+
+(Replace with actual URL)
+
+⚡ FEATURE STATUS
+───────────────────────────────────────────────────────────────
+Watch console for these messages:
+  "[REDYNHUB AutoScript] Starting..."
+  "[REDYNHUB AutoScript] All features activated!"
+  "[REDYNHUB AutoScript] Auto Rebirth! Total: X"
+
+🎉 ENJOY AUTOMATED GAMEPLAY!
+───────────────────────────────────────────────────────────────
+Questions? Check README.md or QUICKSTART.md
