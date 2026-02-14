@@ -89,8 +89,6 @@ function AutoScript:AutoMoney()
             end
         end
     end
-    
-    self:Log("Auto Money active")
 end
 
 -- Auto Collect System
@@ -140,7 +138,6 @@ function AutoScript:AutoCollect()
     end
     
     self.State.LastCollect = currentTime
-    self:Log("Auto Collect executed")
 end
 
 -- Auto Trade System
@@ -167,7 +164,6 @@ function AutoScript:AutoTrade()
     end
     
     self.State.LastTrade = currentTime
-    self:Log("Auto Trade executed")
 end
 
 -- Auto Upgrade System
@@ -207,7 +203,6 @@ function AutoScript:AutoUpgrade()
     end
     
     self.State.LastUpgrade = currentTime
-    self:Log("Auto Upgrade executed")
 end
 
 -- Auto Speed System
@@ -218,11 +213,6 @@ function AutoScript:AutoSpeed()
     if character and character:FindFirstChild("Humanoid") then
         local humanoid = character.Humanoid
         humanoid.WalkSpeed = 16 * self.Config.SpeedMultiplier
-        
-        -- Also boost run speed if available
-        if humanoid:FindFirstChild("WalkSpeed") then
-            humanoid.WalkSpeed = 16 * self.Config.SpeedMultiplier
-        end
     end
 end
 
